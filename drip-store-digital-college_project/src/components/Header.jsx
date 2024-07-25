@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { FaSearch } from 'react-icons/fa';
-import Logo from './Logo'; // Importa o novo componente Logo
+import Logo from './Logo';
 import carrinho from '../components/imgs/carrinho.svg';
 
 const HeaderContainer = styled.header`
@@ -35,7 +35,8 @@ const TopSection = styled.div`
 
 const SearchWrapper = styled.div`
   position: relative;
-  margin-right: 40px;
+  margin-left: 60px; 
+  margin-right: 20px; 
 `;
 
 const SearchInput = styled.input`
@@ -63,7 +64,8 @@ const SearchIcon = styled(FaSearch)`
 const RegisterLink = styled(Link)`
   width: 102px;
   height: 28px;
-  margin-right: 40px;
+  margin-left: 60px; 
+  margin-right: 20px; 
   color: #474747;
   font-size: 16px;
   font-family: 'Inter', sans-serif;
@@ -73,7 +75,8 @@ const RegisterLink = styled(Link)`
 `;
 
 const LoginButton = styled.button`
-  margin-right: 30px;
+  margin-left: 60px; 
+  margin-right: 20px; 
   width: 114px;
   height: 40px;
   background: #C92071;

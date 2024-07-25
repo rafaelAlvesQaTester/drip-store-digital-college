@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import logo2 from '../components/imgs/logo2.svg';
+import { Logo2 } from './Logo'; // Importa o novo componente Logo2
 import faceLogo from '../components/imgs/faceLogo.svg';
 import instaLogo from '../components/imgs/instaLogo.svg';
 import twitterLogo from '../components/imgs/twitterLogo.svg';
@@ -14,7 +14,7 @@ const FooterContainer = styled.div`
   color: white;
   padding: 20px;
   box-sizing: border-box;
-  margin: 0 auto; // Centraliza o conteúdo
+  margin: 0 auto;
 `;
 
 const TopSection = styled.div`
@@ -26,13 +26,6 @@ const TopSection = styled.div`
 const LogoSection = styled.section`
   width: 45%;
   margin-right: 20px;
-`;
-
-const LogoImage = styled.img`
-  width: 253px;
-  height: 44px;
-  padding: 20px 0;
-  margin-left: 40px; // Desloca a logo 40px para a direita
 `;
 
 const Description = styled.p`
@@ -71,11 +64,10 @@ const NavList = styled.ul`
 
 const NavItem = styled.li`
   margin-bottom: 20px;
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition: transform 0.3s ease;
 
   &:hover {
     transform: scale(1.2);
-    color: yellow;
   }
 `;
 
@@ -86,7 +78,7 @@ const NavLink = styled.a`
   transition: color 0.3s ease;
 
   &:hover {
-    color: yellow; /* Altere a cor do texto para amarelo ao passar o mouse */
+    color: yellow;
   }
 `;
 
@@ -112,19 +104,19 @@ const Footer = () => {
     <FooterContainer>
       <TopSection>
         <LogoSection>
-          <LogoImage src={logo2} alt="Logo2" />
+          <Logo2 />
           <Description>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
           </Description>
           <SocialIcons>
-            <SocialIcon href="https://login.example.com" target="_blank" rel="noopener noreferrer">
-              <img src={faceLogo} alt="FaceLogo" />
+            <SocialIcon href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+              <img src={faceLogo} alt="Facebook" />
             </SocialIcon>
-            <SocialIcon href="https://login.example.com" target="_blank" rel="noopener noreferrer">
-              <img src={instaLogo} alt="InstaLogo" />
+            <SocialIcon href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+              <img src={instaLogo} alt="Instagram" />
             </SocialIcon>
-            <SocialIcon href="https://login.example.com" target="_blank" rel="noopener noreferrer">
-              <img src={twitterLogo} alt="TwitterLogo" />
+            <SocialIcon href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+              <img src={twitterLogo} alt="Twitter" />
             </SocialIcon>
           </SocialIcons>
         </LogoSection>
