@@ -5,16 +5,16 @@ import logo2 from '../components/imgs/logo2.svg';
 
 const LogoImg = styled.img`
   width: 253px;
-  height: 74px;
+  height: 44px;
   color: ${(props) => props.color || 'inherit'};
-  margin-right: 50px; 
+  margin-right: 30px; /* Espaço após a logo */
 `;
 
 export const Logo = ({ color }) => <LogoImg src={logo} alt="Logo" color={color} />;
 
 const Logo2Img = styled.img`
   width: 253px;
-  height: 74px;
+  height: 44px;
   margin-left: 40px;
   color: ${(props) => props.color || 'inherit'};
 `;

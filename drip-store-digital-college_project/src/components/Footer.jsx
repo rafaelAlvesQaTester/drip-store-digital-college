@@ -7,14 +7,14 @@ import twitterLogo from '../components/imgs/twitterLogo.svg';
 
 const FooterContainer = styled.div`
   background: black;
-  width: 100%;
+  width: 1440px;  /* Define a largura fixa do footer */
   height: 454px;
   display: flex;
   flex-direction: column;
   color: white;
   padding: 20px;
   box-sizing: border-box;
-  margin: 0 auto;
+  margin: 0 auto; /* Centraliza o footer horizontalmente */
 `;
 
 const TopSection = styled.div`
