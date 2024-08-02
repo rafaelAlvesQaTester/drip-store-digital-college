@@ -7,7 +7,7 @@ import twitterLogo from '../components/imgs/twitterLogo.svg';
 
 const FooterContainer = styled.div`
   background: black;
-  width: 1440px;  /* Define a largura fixa do footer */
+  width: 100%;  /* Define a largura fixa do footer */
   height: 454px;
   display: flex;
   flex-direction: column;
